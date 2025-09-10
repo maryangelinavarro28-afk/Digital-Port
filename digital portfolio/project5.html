@@ -1,0 +1,135 @@
+<html> 
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+		* {box-sizing: border-box}
+	body {font-family: "times new roman", condensed;}
+
+
+.tab {
+  float: left;
+  background-color: black;
+  width: 20%;
+  height: 580px;
+}
+
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: gray;
+  padding: 50px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 25px;
+  font-family: "times new roman";
+}
+
+
+.tab button:hover {
+  background-color: white;
+}
+
+
+.tab button.active {
+  background-color: white;
+}
+
+
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  border-left: none;
+  height: 650px;
+}
+
+a:link, a:visited {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: right;
+}
+
+a:hover, a:active {
+  background-color: #9dc08b;
+}
+</style>
+
+		</style>
+	<title>Project 5</title>
+	<a href= "projects.html"><i class="fa fa-home"></i> Projects</a>
+</head>
+	<body bgcolor="#fffff">	
+		<h1 style="font-family:times; font-size:300%; color:black;" align= "center">
+		<span class="title-word title-word-1">Project 5
+		</h1>
+		<div id="copyright" style="height:10px;width:100%;background-color:black"> 
+		</div>
+		
+		<body>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Problem')" id="defaultOpen">Problem</button>
+  <button class="tablinks" onclick="openCity(event, 'Explanation')">Explanation</button>
+  <button class="tablinks" onclick="openCity(event, 'Solution')">Solution</button>
+  <button class="tablinks" onclick="openCity(event, 'Conclusion')">Conclusion</button>
+  <button class="tablinks" onclick="openCity(event, 'Application')">Application</button>
+</div>
+
+<div id="Problem" class="tabcontent">
+  <h3>Problem</h3>
+  <p>GIVEN PROBLEM</p>
+</div>
+
+<div id="Explanation" class="tabcontent">
+  <h3>Explanation</h3>
+  <p>ANALYZE THE PROBLEM</p> 
+</div>
+
+<div id="Solution" class="tabcontent">
+  <h3>Solution</h3>
+  <p>SHOW SOLUTION</p>
+</div>
+
+<div id="Conclusion" class="tabcontent">
+  <h3>Conclusion</h3>
+  <p>THE ANSWER/S</p> 
+</div>
+
+<div id="Application" class="tabcontent">
+  <h3>Application</h3>
+  <p>HOW TO APPLY IN REAL LIFE</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+		</body>
+		</html>

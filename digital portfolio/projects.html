@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body bgcolor="#fffff">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <head>
+	<style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: table;
+  width: 400px;
+  height: 450px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 2;
+}
+
+.container:hover .middle {
+  opacity: 9;
+}
+
+.text {
+  color: black;
+  font-size: 35px;
+  padding: 16px 20px;
+  font-family: Georgia ;
+  font-weight: bold;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container:hover .image {
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -ms-filter: blur(2px);
+  -o-filter: blur(2px);
+  filter: blur(2px);
+  transform: scale(1.03);
+}
+
+.container:hover .text {
+  -webkit-opacity: 1;
+  opacity: 1;
+ }
+ 
+.btn {
+  background-color: black; 
+  border: none; 
+  color: white; 
+  padding: 12px 16px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  float: right
+
+}
+.btn:hover {
+  background-color: gray;
+}
+
+btn.a:link, a:visited {
+  background-color: #40513b;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: right;
+}
+
+btn.a:hover, a:active {
+  background-color: #9dc08b;
+}
+
+
+</style>
+  <title>Projects</title>
+ <button class="btn"><a href="index.html" style="text-decoration:none; font-family: Georgia ; font-weight: bold;"><i class="fa fa-home"></i> Home</button></a> 
+ </head>
+<body>
+
+	<h1 style="font-family:times; font-size:500%; color:black;" align= "center">
+		<span class="title-word title-word-1">P R O J E C T S
+	</h1>
+	<div id="copyright" style="height:15px;width:100%;background-color:black"> 
+	</div>
+	<br><br><BR>
+<ul>
+<div class="row">
+  <div class="column">
+  <div class="container">
+	<a style="text-decoration:none"  href="project1.html"><img src="images/project1.jpg" alt="Avatar" class="image" style="width:100%">
+   <div class="middle"> 
+		<div class="text">Digital Portfolio 1</div></a>
+   </div>
+   </div>
+</div>
+
+	<div class="column">
+<div class="container">
+  <a style="text-decoration:none" href="project2.html"><img src="images/eyechart.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">Digital Portfolio 2</div></a>
+  </div>
+</div>
+</div>
+
+	<div class="column">
+<div class="container">
+  <a style="text-decoration:none" href="project3.html"><img src="images/green.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">Digital Portfolio 3</div></a>
+  </div>
+</div>
+</div>
+
+	<div class="column">
+<div class="container">
+  <a style="text-decoration:none" href="project4.html"><img src="images/dark green.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">Digital Portfolio 4</div></a>
+  </div>
+</div>
+</div>
+
+	<div class="column">
+<div class="container">
+  <a style="text-decoration:none" href="project5.html"><img src="images/green.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">Digital Portfolio 5</div></a>
+  </div>
+</div>
+</div>
+
+	<div class="column">
+<div class="container">
+ <a style="text-decoration:none" href="project6.html"><img src="images/dark green.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">Digital Portfolio 6</div></a>
+  </div>
+  </div>
+</div>
+</div>
+
+
+</ul>
+
+<div id="copyright" style="height:6px;width:100%;padding;5px;background-color:#40513b"> 
+
+<font color=#557153 size="4px">
+<br>
+<center>All rights reserved. &copy 2025 - Navarro</center>
+<br>
+</font>
+</div>

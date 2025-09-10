@@ -1,0 +1,457 @@
+<html> 
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+		* {box-sizing: border-box}
+	body {font-family: "times new roman", condensed;}
+
+
+.tab {
+  float: left;
+  background-color: black;
+  width: 20%;
+  height: 580px;
+}
+
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: gray;
+  padding: 50px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 25px;
+  font-family: "times new roman";
+}
+
+
+.tab button:hover {
+  background-color: white;
+}
+
+
+.tab button.active {
+  background-color: white;
+}
+
+
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 80%;
+  border-left: none;
+  height: 650px;
+  overflow-y: scroll;
+}
+
+.menu:link, a:visited {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: right;
+}
+
+.menu:hover, a:active {
+  background-color: #9dc08b;
+}
+
+
+h3 	  {
+  margin-left:20px;
+}
+p	  {
+  margin-left:20px
+}
+
+table, td, th{
+  border: 2px solid black;
+  padding-left: 5px;
+ 
+}
+
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+div.gallery {
+  border: 1px solid white;
+}
+
+div.gallery:hover {
+  border: 1px solid green;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  width:  100px;
+  height: 100px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.image:link, a:visited {
+  text-align: center;
+  text-decoration: none;
+}
+
+.image:hover, .image:active {
+  background-color: white;
+}
+
+</style>
+
+		</style>
+	<title>Activity 2</title>
+	<a class="menu"href= "project1.html"><i class="fa fa-home"></i> Project 1</a>
+</head>
+	<body bgcolor="#fffff">	
+		<h1 style="font-family:times; font-size:350%; color:black;margin-left:50" align= "center">
+		<span class="title-word title-word-1">Activity 2
+		</h1>
+		<div id="copyright" style="height:10px;width:100%;background-color:black"> 
+		</div>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Activity')" id="defaultOpen">Objectives, Introduction, Materials, and Procedure</button>
+  <button class="tablinks" onclick="openCity(event, 'Experiment')">Identify Least Count and Estimate Uncertainty</button>
+  <button class="tablinks" onclick="openCity(event, 'Part 1 and 2')">Take and Report Measurements</button>
+  <button class="tablinks" onclick="openCity(event, 'Guide')">Guide Questions</button>
+  <button class="tablinks" onclick="openCity(event, 'Documentation')">Documentation</button>
+</div>
+
+<div id="Activity" class="tabcontent">
+	<h2 style="font-family:georgia; font-size:200%; ">UNCERTAINTY OF MEASUREMENT</h2>
+	<div id="copyright" style="height:2px;width:100%;background-color:black"> <br>
+  <h3>I. OBJECTIVES:</h3>
+	<p> ● I dentify the least count of common measuring devices.
+    <br>● Determine the uncertainty based on least count. 
+    <br>● Write measurements with the correct notation and uncertainty.</p>
+    <br>
+	
+  <h3>II. INTRODUCTION</h3>
+	<p>In an scientific measurement, no value is perfectly exact. Every measurement has a degree of uncertainty, 
+	which reflects the limitations of the <br>measuring instrument and the person using it. This uncertainty is not a mistake - it’s a normal and expected part of measuring.
+    <br><br>The least count is the smallest division that a measuring device can reliably show. The uncertainty <br>is typically estimated 
+	as ± half the least count, 
+	unless the instrument specifies otherwise. 
+	<br> <br><b>Example:</b>
+	If a ruler’s smallest division is <b>1 mm</b>, the uncertainty is usally<b> ± 0.5 mm</b>. So if the length measured is <b>12.0 cm</b>, you should write: <b>12.0 cm ± 0.05 cm</b>
+	<br><br>Understanding and writing measurements with uncertainty is essential in physics to <b>show reliability and precision of your data.</b></p>
+	<br> 
+	
+  <h3>III. MATERIALS</h3>
+	<p>1. Ruler (cm and mm scale)&nbsp; &nbsp; &nbsp;  5. Stop watch
+	<br>2. Vernier caliper &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 6. Digital Scale
+	<br>3. Tripple beam balance &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 7. Objects to measure:
+	<br>4. Meter stick &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; metal ball, metal cylinder, pen, book, coin, your name</p>
+	<br><br>
+	
+ <h3>IV. PROCEDURE </h3>
+	<p> > Use the smallest division you can reliably read to determine the least count.
+	<br> > Uncertainty is usally <b>± half the least count</b> unless otherwise stated.  
+	<br> > Measure the following objects using appropriate devices. Write each result with the corect <b> measurement ±  uncertainty format</b>. <br><br><br><br>
+</div></div></p>
+
+<div id="Experiment" class="tabcontent">
+  
+   
+<table style="width:100%;  border-collapse: collapse;">
+<caption style= " font-family: Georgia; "><b>Table 1 : Identify Least Count and Estimate Uncertainty </b></caption>
+<tr>
+<th>Measuring Device </th>
+<th>Least Count </th>
+<th>Estimated Uncertainty </th>
+</tr>
+
+<tr>
+<td> Ruler (cm side) </td>
+<td> 0.05 cm </td>
+<td> 0.05 cm ± 0.025 cm </td>
+</tr>
+
+<tr>
+<td> Ruler (mm side) </td>
+<td> 0.5 mm </td>
+<td> 0.5 mm ± 0.25 mm </td>
+</tr>
+
+<tr>
+<td> Meter stick </td>
+<td> 0.5 cm </td>
+<td> 0.5 cm ± 0.25 cm </td>
+</tr>
+
+<tr>
+<td> Digital scale (kg) </td>
+<td> 0.0001 kg </td>
+<td> 0.0001 kg ± 0.0005 kg </td>
+</tr>
+
+<tr>
+<td> Triple beam balance (g) </td>
+<td> 0.1 g </td>
+<td> 0.1 g ± 0.05 g </td>
+</tr>
+
+<tr>
+<td> Stopwatch </td>
+<td> 0.01 sec </td>
+<td> 0.01 sec ± 0.005 sec </td>
+</tr>
+
+</table>
+
+
+</div>
+
+<div id="Part 1 and 2" class="tabcontent">
+ 
+<table style="width:100%;  border-collapse: collapse;">
+<caption style= " font-family: Georgia;"><b>Table 2 : Take and Report Measurements </b></caption>
+<tr>
+<th>Objects Measured</th>
+<th>Device Used </th>
+<th>Measured Value </th>
+<th>Proper Notation <br> (with ± uncertainty)
+</th>
+</tr>
+
+<tr>
+<td> Length of a pen </td>
+<td> Ruler (mm side) </td>
+<td> 15.2 mm </td>
+<td> 15.2 mm ± 0.25 mm </td>
+</tr>
+
+<tr>
+<td> Height of a book </td>
+<td> Ruler (cm side)</td>
+<td> 33.5 g </td>
+<td> 33.5 cm ± 0.25 cm </td>
+</tr>
+
+<tr>
+<td> Mass of a ball </td>
+<td> Triple beam balance</td>
+<td> 233 g </td>
+<td> 232 g ± 0.05 g </td>
+</tr>
+
+<tr>
+<td> Mass of the cylinder </td>
+<td> Triple beam balance</td>
+<td> 53.3 g </td>
+<td> 53.3 g ± 0.05 g </td>
+</tr>
+
+
+<tr>
+<td> Time to say your name </td>
+<td> Stopwatch</td>
+<td> 1.06 s</td>
+<td> 1.06 s ± 0.005 s </td>
+</tr>
+
+<tr>
+<td> Width of a coin </td>
+<td> Vernier caliper</td>
+<td> 2.5 cm </td>
+<td> 2.5 cm ± 0.5 cm </td>
+</tr>
+</table>
+
+
+</div>
+
+<div id="Guide" class="tabcontent">
+  <h2 style="font-family:georgia; font-size:200%; ">GUIDE QUESTIONS</h2>
+  <div id="copyright" style="height:2px;width:100%;background-color:black"> <br></div>
+  <h3> 1. Why is it important to report uncertainty in measurements? <br></h3>
+		<p>‣ Because <i>every measurement is not perfect</i>. It may be because of the device used or the way it is executed. This helps avoid misleading conclusions, allows fair 
+		comparison of results, and ensures honesty about the
+		limitations of the tools or methods used. In short,
+		uncertainty makes measurements more trustworthy and
+		scientifically valid.</p><br>
+  <h3>  2. What is the difference between precision and accuracy? <br></h3>
+		<p><i>‣ Accuracy</i> refers to how close a measurement is to the true or accepted value, while <i>precision</i> refers to how consistent repeated measurements are with each other. 
+		A measurement can be precise without being accurate if results are consistent but far from the actual value, and it can be accurate without being precise 
+		if results average close to the true value but vary widely. 
+		Ideally, good measurements should be both accurate and precise to ensure reliability and correctness.</p><br>
+  <h3>  3. If two students measured the same object but reported slightly different uncertainties, is one of them necessarily wrong? Explain.<br></h3>
+		<p>‣ Not necessarily, it doesn’t always mean one of them is wrong. Uncertainty depends not only on the object being measured but also on the measuring tool, the method used, and even the 
+		judgment of the person doing the measurement. For example, one student might use a ruler that measures to the nearest millimeter, while another might estimate between lines and give a smaller 
+		uncertainty. As long as both follow logical reasoning and 
+		clearly explain how they determined their uncertainties, both results can be valid. The key is that uncertainty should honestly reflect the limitations of the measurement.</p><br>
+  <h3>  4. How can using better instruments reduce uncertainty? <br></h3>
+		<p>‣ Using better instruments can reduce uncertainty because they are designed to measure more precisely and accurately. High-quality instruments usually have finer scales, better sensitivity, and less error, 
+		which allow for smaller divisions and more exact readings. For example, a digital caliper that measures to the nearest 0.01 mm will give a much smaller uncertainty 
+		than a regular ruler that only measures to the nearest millimeter. By minimizing limitations of the measuring tool, better instruments reduce the possible range of error and 
+		make results more reliable and trustworthy.</p><br>
+  
+</div>
+
+<div id="Documentation" class="tabcontent">
+  <h2 style="font-family:georgia; font-size:200%;">Documentation</h2>
+  <div id="copyright" style="height:2px;width:100%;background-color:black"> <br></div>
+<br><br>
+<div class="row">
+ <div class="column">
+  <div class="gallery">
+      <img style="width: 278px; height: 210px;" src="images/pen.jpg" alt="Pen">
+    <div class="desc">Measuring the length of the pen</div>
+  </div> 
+  <br>
+  <div class="gallery">
+
+      <img style="width: 278px; height: 210px;" src="images/pre.jpg" alt="Pre Laboratory">
+	<div class="desc">Pre Laboratory</div>
+	<br>
+  </div>
+</div>
+
+ <div class="column">
+  <div class="gallery">
+	<a class="image" target="_blank" href="images/wb.jpg">
+      <img style="width: 278px; height: 210px;" src="images/wb.jpg" alt="Workbook">
+    </a>
+	<div class="desc">Measuring the length of the workbook</div>
+  </div>
+  <br>	
+  <div class="gallery">
+	<a class="image" target="_blank" href="images/prep.jpg">
+      <img style="width: 278px; height: 210px;" src="images/prep.jpg" alt="Preparing">
+    </a>
+	<div class="desc">Preparing equipments</div>
+	<br>
+  </div>
+ </div>
+
+ <div class="column">
+  <div class="gallery">
+	<a class="image" target="_blank" href="images/sphere.jpg">
+      <img src="images/sphere.jpg" alt="Sphere">
+    </a>
+	<div class="desc">Measuring the mass of the metal ball</div>
+  </div>
+  <br>
+  <div class="gallery">
+	<a class="image" target="_blank" href="images/prep2.jpg">
+      <img style="width: 278px; height: 210px;" src="images/prep2.jpg" alt="Preparing">
+    </a>
+	<div class="desc">Preparing equipments</div>
+	<br>
+
+  </div>
+</div>
+
+ <div class="column">
+  <div class="gallery">
+	<a class="image" target="_parent" href="images/cylinder.jpg">
+      <img src="images/cylinder.jpg" alt="Cylinder">
+    </a>
+	<div class="desc">Measuring the mass of the cylinder</div>
+  </div>
+  <br>
+  <div class="gallery">
+	<a class="image" target="_blank" href="images/group.jpg">
+      <img style="width: 100%" src="images/group.jpg" alt="Group Photo">
+    </a>
+	<div class="desc">Group photo</div>
+	<br>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+
+</script>
+   
+		</body>
+		</html>

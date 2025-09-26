@@ -2,8 +2,9 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<style>
+		 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><style>
 		* {box-sizing: border-box}
 	body {font-family: "times new roman", condensed;}
 
@@ -45,12 +46,13 @@
 .tabcontent {
   float: left;
   padding: 0px 12px;
-  width: 70%;
+  width: 80%;
   border-left: none;
   height: 650px;
+  overflow-y: scroll;
 }
 
-a:link, a:visited {
+.menu:link, a:visited {
   background-color: black;
   color: white;
   padding: 15px 25px;
@@ -60,9 +62,131 @@ a:link, a:visited {
   float: right;
 }
 
-a:hover, a:active {
+.menu:hover, a:active {
   background-color: #9dc08b;
 }
+
+
+h3 	  {
+  margin-left:20px;
+}
+p	  {
+  margin-left:20px
+}
+
+table, td, th{
+  border: 2px solid black;
+  padding-left: 5px;
+ 
+}
+
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+div.gallery {
+  border: 1px solid white;
+}
+
+div.gallery:hover {
+  border: 1px solid green;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  width:  100px;
+  height: 100px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.image:link, a:visited {
+  text-align: center;
+  text-decoration: none;
+}
+
+.image:hover, .image:active {
+  background-color: white;
+}
+
+ position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+// Fraction
+.fraction {
+  display: inline-block;
+  vertical-align: middle; 
+  margin: 0 0.2em 0.4ex;
+  text-align: center;
+  & > span{
+    display: block;
+    padding-top: 0.15em;
+  }
+  & span{
+    &.fdn{
+      border-top: thin solid black;
+    }
+    &.bar{
+      display: none;
+    }
+  }
+
 </style>
 
 		</style>
@@ -70,46 +194,776 @@ a:hover, a:active {
 	<a href= "projects.html"><i class="fa fa-home"></i> Projects</a>
 </head>
 	<body bgcolor="#fffff">	
-		<h1 style="font-family:times; font-size:300%; color:black;" align= "center">
-		<span class="title-word title-word-1">Project 2
-		</h1>
-		<div id="copyright" style="height:10px;width:100%;background-color:black"> 
+		<h1 style="font-family:Montserrat; font-size:450%; color:black; margin-left:95px" align= "center">
+		<span class="title-word title-word-1">D I G I T A L &nbsp; P O R T F O L I O &nbsp;  2
+	</h1>
+	<div id="copyright" style="height:10px;width:100%;background-color:black"> 
 		</div>
-		
 		<body>
 
-
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Problem')" id="defaultOpen">Problem</button>
-  <button class="tablinks" onclick="openCity(event, 'Explanation')">Explanation</button>
-  <button class="tablinks" onclick="openCity(event, 'Solution')">Solution</button>
+  <button class="tablinks" onclick="openCity(event, 'Problem')" id="defaultOpen">Case Scenario, Tasks, & Definition of Terms</button>
+  <button class="tablinks" onclick="openCity(event, 'Explanation')">Mean, Variance, and Standard Deviation</button>
+  <button class="tablinks" onclick="openCity(event, 'Solution')">Estimation of Measurement and Linear Regression</button>
   <button class="tablinks" onclick="openCity(event, 'Conclusion')">Conclusion</button>
-  <button class="tablinks" onclick="openCity(event, 'Application')">Application</button>
+  <button class="tablinks" onclick="openCity(event, 'Application')">Documentation</button>
 </div>
 
 <div id="Problem" class="tabcontent">
-  <h3>Problem</h3>
-  <p>GIVEN PROBLEM</p>
+  <h2 style="font-family:Montserrat; font-size:200%; ">Errors, Measurements, and Linear Regression</h2>
+	<div id="copyright" style="height:2px;width:100%;background-color:black"> <br>
 </div>
-
+<h3>I. CASE SCENARIO:</h3>
+	<p> A golf coach runs an experiment to see how launch angle affects driving distance. They test three 
+	angles: 30°, 45°, and 60°. For each angle they perform 10 trials 
+	(measured carry distance in yards). The recorded distances are:<br> 
+	30° trials (m): [ 203.93, 200.19, 200.96, 202.45, 199.05, 199.15, 202.82, 200.86, 198.78, 200.02 ]
+	<br>
+	45° trials (m): [ 238.08, 238.07, 240.34, 239.62, 241.24, 239.73, 240.03, 240.19, 238.01, 239.41 ]
+	<br>
+	60° trials (m): [ 190.12, 189.59, 191.75, 188.35, 189.83, 190.01, 188.08, 192.13, 186.44, 188.77 ]
+	</p>
+<h3>II. TASKS:</h3>
+	<p>1. For ech angle: Compute the <b>mean, variance, and standard deviation.</b> <br>
+	2. Perform a simple linear regression using angle (in degrees) as the independent variable x 
+	and distance (meters) as the dependent variable y. <br>
+	3. Based on the sample means and the regression result, which angle looks best to maximize distance?<br>
+<h3>III. DEFINITION OF TERMS: 
+	<p>1. Mean - The mean is the average value of a set of numbers. It tells us the central or typical value in a data set. </p><br>
+	<img style="width:150px" src="images/project2/meanformula.png"><br>
+	<p>2. Variance - Variance is the expected value of the squared variation of a random variable from its 
+	mean value, in probability and statistics.<br></p>
+	<img style="width:150px" src="images/project2/varianceformula.png"><br>
+	<p>3. Standard Deviation - A statistical measure of variability that indicates the average amount that a set of 
+	numbers deviates from their mean.</p><br>
+	<img style="width:150px" src="images/project2/standarddevi.png"> <br>
+</div>
+	
 <div id="Explanation" class="tabcontent">
-  <h3>Explanation</h3>
-  <p>ANALYZE THE PROBLEM</p> 
+   
+  <h2>I. Find mean, variance, and standard deviation at <i> 30°</i></h2>
+<center><img style="width:70%; height: 50%; margin:40px" src="images/project2/player1.gif"></center>
+<table style="width:100%;  border-collapse: collapse;">
+<tr style="font-size: 25px">
+<th>30°</th>
+<th>xᵢ-x̄ </th>
+<th>(xᵢ-x̄)²</th>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 203.93 </td>
+<td> 3.109 </td>
+<td> 9.665881 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 200.19 </td>
+<td> -0.631</td>
+<td> 0.398161 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 200.96 </td>
+<td> 0.139</td>
+<td> 0.019321 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td>202.45</td>
+<td> 1.629</td>
+<td> 2.653641 </td>
+</tr>
+
+
+<tr style="font-size: 20px">
+<td> 199.05 </td>
+<td> -1.771</td>
+<td> 3.136441</td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 199.15 </td>
+<td> -1.671</td>
+<td> 2.792241 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 202.82 </td>
+<td> 1.999</td>
+<td> 3.996001 </td>
+</tr>
+
+<tr style="font-size: 20px"> 
+<td> 200.86 </td>
+<td> 0.039</td>
+<td> 0.001521 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 198.78 </td>
+<td> -2.041</td>
+<td> 4.165681 </td>
+</tr>
+
+
+<tr style="font-size: 20px">
+<td> 200.02 </td>
+<td> -0.801</td>
+<td> 0.641601</td>
+</tr>
+
+<tr>
+<td style="font-size: 25px"><B> ∑ 2008.21</B> </td>
+<td> </td>
+<td style="font-size: 25px"><B> ∑ 27.47049 </B></td>
+</tr>
+</table>
+
+&nbsp;<h2>Solutions:</h2>
+<p>a) Mean</p>
+<img style="width:150px; height:100px;" src="images/project2/meansub30.png"> &nbsp; &nbsp;
+<img style="width:150px; height:100px;" src="images/project2/meanans30.png"><br><br>
+
+<p>b) Variance</p>
+<img style="width:150px; height:100px;" src="images/project2/varans30.png"><br><br>
+
+<p>c) Standard Deviation</p>
+<img style="width:250px; height:200px;" src="images/project2/stanans30.png"><br><br>
+ <div id="copyright" style="height:2px;width:100%;background-color:black"> <br></div> 
+  <BR><BR>
+<h2> II. Find the mean, variance, standard deviation at angle <i> 45°</i></h2>
+<center><img style="width:70%; height: 50%; margin:40px" src="images/project2/player2.gif"></center>
+<table style="width:100%;  border-collapse: collapse;">
+<tr style="font-size: 25px">
+<th>45° </th>
+<th>xᵢ-x̄ </th>
+<th> (xᵢ-x̄)²  </th>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 238.08 </td>
+<td> -1.392</td>
+<td> 1.937664 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 238.07 </td>
+<td> -1.402 </td>
+<td> 1.965604 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 238.01 </td>
+<td> -1.402 </td>
+<td> 1.965604 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 240.34  </td>
+<td> 0.868 </td>
+<td>  0.753424 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td>  239.62 </td>
+<td> 0.148 </td>
+<td> 0.0210104 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 241.24 </td>
+<td> 1.768 </td>
+<td>  3.125824 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td>  239.73</td>
+<td> 0.258 </td>
+<td> 0.066564 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 240.03 </td>
+<td> 0.558 </td>
+<td>  0.311364 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td>  240.19</td>
+<td> 0.718 </td>
+<td> 0.515524 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 238.01 </td>
+<td> -1.462 </td>
+<td>  2.127444 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td>  239.41</td>
+<td> -0.062 </td>
+<td> 0.003844 </td>
+</tr>
+
+<tr>
+<td style="font-size: 25px"><B> ∑ 2394.72</B> </td>
+<td> </td>
+<td style="font-size: 25px"><B> ∑ 10.83916 </B></td>
+</tr>
+</table>
+&nbsp;<h2>Solutions:</h2>
+<p>a) Mean</p>
+<img style="width:150px; height:100px;" src="images/project2/meansub45.png"> &nbsp; &nbsp;
+<img style="width:150px; height:100px;" src="images/project2/meanans45.png"><br><br>
+
+<p>b) Variance</p>
+<img style="width:150px; height:100px;" src="images/project2/varans45.png"><br><br>
+
+<p>c) Standard Deviation</p>
+<img style="width:250px; height:200px;" src="images/project2/stanans45.png"><br><br>
+
+<div id="copyright" style="height:2px;width:100%;background-color:black"> <br></div>
+<BR><BR>
+<h2> III. Find the mean, variance, standard deviation at angle <i> 60°</i></h2>
+<center><img style="width:70%; height: 50%; margin:40px;" src="images/project2/player3.gif"></center>
+<table style="width:100%;  border-collapse: collapse;">
+<tr style="font-size: 25px">
+<th>60° </th>
+<th>xᵢ-x̄ </th>
+<th> (xᵢ-x̄)²  </th>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 190.12 </td>
+<td> 0.613</td>
+<td> 0.375769 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 189.59 </td>
+<td> 0.083 </td>
+<td> 0.006889 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 191.75 </td>
+<td> 2.243 </td>
+<td> 5.031049 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 188.35  </td>
+<td> -1.157 </td>
+<td>  1.338649 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td>  189.83 </td>
+<td> 0.383 </td>
+<td> 0.146689 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 190.01 </td>
+<td> 0.503 </td>
+<td>  0.253009 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 188.08 </td>
+<td> -1.427 </td>
+<td> 2.036329 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 192.13 </td>
+<td> 2.623 </td>
+<td>  6.880129 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td>  186.44</td>
+<td> -3.067 </td>
+<td> 9.406489 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 188.77 </td>
+<td> -0.737 </td>
+<td>  0.543169 </td>
+</tr>
+
+<tr>
+<td style="font-size: 25px"><B> ∑ 189507</B> </td>
+<td> </td>
+
+<td style="font-size: 25px"><B> ∑ 26.0181709 </B></td>
+</tr>
+</table>
+&nbsp;<h2>Solutions:</h2>
+<p>a) Mean</p>
+<img style="width:150px; height:100px;" src="images/project2/meansub60.png"> &nbsp; &nbsp;
+<img style="width:150px; height:100px;" src="images/project2/meanans60.png"><br><br>
+
+<p>b) Variance</p>
+<img style="width:150px; height:100px;" src="images/project2/varans60.png"><br><br>
+
+<p>c) Standard Deviation</p>
+<img style="width:250px; height:200px;" src="images/project2/stanans60.png"><br><br>
+<div id="copyright" style="height:2px;width:100%;background-color:black"> <br></div>
+<BR><BR>
+
+<h2>Compilation of answers</h2>
+  <table style="width:100%;  border-collapse: collapse;">
+<tr style="font-size: 25px">
+<th>Angles</th>
+<th>Mean </th>
+<th>Variance</th>
+<th>Standard Deviation</th>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 30° </td>
+<td> 200.82 m </td>
+<td> 2.747049 </td>
+<td> 1.657422396 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 45° </td>
+<td> 239.47m </td>
+<td> 1.083916 </td>
+<td> 1.041112866 </td>
+</tr>
+
+<tr style="font-size: 20px">
+<td> 60° </td>
+<td> 189.51 m </td>
+<td> 2.60181709 </td>
+<td>1.613014907 </td>
+</tr>
+</table><br><Br><br>
 </div>
 
 <div id="Solution" class="tabcontent">
-  <h3>Solution</h3>
-  <p>SHOW SOLUTION</p>
+  <h2 style="font-family:Montserrat" >Estimation of Measurement</h2>
+  <h2>A. Scatter Plot</h2>
+  <img style="width:100%; height:100%" src="images/project2/scatplot.png"><br><br>
+  <h2>B. Line of Best Fit</h2>
+   <img style="width:100%; height:100%" src="images/project2/linescat.png"><br><br>
+			<div id="copyright" style="height:2px;width:100%;background-color:black"> <br></div>
+   <h2 style="font-family:Montserrat" >Linear Regression</h2>
+   <h2>A. Definition of Terms</h2>
+	<p style="font-size:20px"> Linear Regression - <br>
+	&nbsp; Linear regression is a supervised machine learning algorithm that models the relationship between a <b>dependent variable and 
+	one or more independent variables</b> by fitting a linear  &nbsp; equation to observed data. 
+	It is widely used for prediction and forecasting in various fields such as finance, economics, and psychology.<br></p>
+		<img style="width: 50%; height:30%"src="images/project2/linearform.png"><br><br>
+   <h2>B. Given:</h2>
+     <p style="font-size:20px"> a) x₁= 30° , x₂= 45° , x₃= 60°  </p>
+	<p> -The angles, 30,45, and 60 are the independet variable or x </p><br>
+	 <p style="font-size:20px">b) y= trials</p> 
+	<p> -The trials of each angles are the dependet variable or y </p><br>
+   <h2>C. Unknown:</h2>
+     <p style="font-size:20px"> a) <i>∑x= ?, ∑y= ?, ∑xy= ?, ∑x² = ? </i><br>
+	 b) <i>m</i> and <i>b</i> for y = mx + b<br>
+	 c) <i>y</i> = <i>mx</i> + <i>b</i><br><br>
+   <h2>D. Solution</h2>
+   <h3>Step 1: Find ∑x, ∑y, ∑xy, ∑x² for each angle</h3> <br>
+  <div class="row">
+ 
+   <table style="width:29%;  border-collapse: collapse; margin:10px">
+<tr>
+<th>x</th>
+<th>y </th>
+<th>xy </th>
+<th>x²</th>
+</tr>
+
+<tr>
+<td> 30° </td>
+<td> 203.93 </td>
+<td> 6117.9 </td>
+<td> 900 </td>
+</tr>
+
+<tr>
+<td> 30° </td>
+<td> 200.19</td>
+<td> 6005.7 </td>
+<td> 900 </td>
+</tr>
+
+<tr>
+<td> 30° </td>
+<td> 200.96</td>
+<td> 6028.8 </td>
+<td> 900 </td>
+</tr>
+
+<tr>
+<td> 30° </td>
+<td> 202.45</td>
+<td> 6073.5 </td>
+<td> 900 </td>
+</tr>
+
+
+<tr>
+<td> 30° </td>
+<td> 199.05</td>
+<td> 5971.5</td>
+<td> 900 </td>
+</tr>
+
+<tr>
+<td> 30° </td>
+<td> 199.15</td>
+<td> 5974.5 </td>
+<td> 900 </td>
+</tr>
+
+<tr>
+<td> 30° </td>
+<td> 202.82</td>
+<td> 6084.6 </td>
+<td> 900 </td>
+</tr>
+
+<tr>
+<td> 30° </td>
+<td> 200.86</td>
+<td> 6025.8 </td>
+<td> 900 </td>
+</tr>
+
+<tr>
+<td> 30° </td>
+<td> 198.78</td>
+<td> 5963.4 </td>
+<td> 900 </td>
+</tr>
+
+
+<tr>
+<td> 30° </td>
+<td> 200.02</td>
+<td> 6000.6</td>
+<td> 900 </td>
+</tr>
+
+<tr>
+<td>∑ 300 </td>
+<td>∑ 2008.21</td>
+<td>∑ 60246.3 </td>
+<td>∑ 9000 </td>
+</tr>
+</table>
+<table style="width:29%;  border-collapse: collapse; margin:10px">
+<tr>
+<th>x</th>
+<th>y </th>
+<th>xy </th>
+<th>x²</th>
+</tr>
+
+<tr>
+<td> 45° </td>
+<td> 208.08 </td>
+<td> 10713.6 </td>
+<td> 2025 </td>
+</tr>
+
+<tr>
+<td> 45° </td>
+<td> 238.07</td>
+<td> 10713.15 </td>
+<td> 2025 </td>
+</tr>
+
+<tr>
+<td> 45° </td>
+<td> 240.34</td>
+<td> 10815.3 </td>
+<td> 2025 </td>
+</tr>
+
+<tr>
+<td> 45° </td>
+<td> 239.62 </td>
+<td> 10782.9 </td>
+<td> 2025 </td>
+</tr>
+
+
+<tr>
+<td> 45° </td>
+<td> 241.24 </td>
+<td> 10855.8 </td>
+<td> 2025 </td>
+</tr>
+
+<tr>
+<td> 45° </td>
+<td> 239.73 </td>
+<td> 10787.85 </td>
+<td> 2025 </td>
+</tr>
+
+<tr>
+<td> 45° </td>
+<td> 240.03 </td>
+<td> 10801.35 </td>
+<td> 2025 </td>
+</tr>
+
+<tr>
+<td> 45° </td>
+<td> 240.19 </td>
+<td> 10808.55 </td>
+<td> 2025 </td>
+</tr>
+
+<tr>
+<td> 45° </td>
+<td> 238.01 </td>
+<td> 10710.45 </td>
+<td> 2025 </td>
+</tr>
+
+
+<tr>
+<td> 45° </td>
+<td> 239.41 </td>
+<td> 10773.45 </td>
+<td> 2025 </td>
+</tr>
+
+<tr>
+<td>∑ 450 </td>
+<td>∑ 2394.72 </td>
+<td> ∑ 107762.4 </td>
+<td>∑ 20250 </td>
+</tr>
+</table>
+
+<table style="width:29%;  border-collapse: collapse; float:right; margin:10px">
+<tr>
+<th>x</th>
+<th>y </th>
+<th>xy </th>
+<th>x²</th>
+</tr>
+
+<tr>
+<td> 60° </td>
+<td> 190.12 </td>
+<td> 11407.2 </td>
+<td> 3600 </td>
+</tr>
+
+<tr>
+<td> 60° </td>
+<td> 189.59 </td>
+<td> 11375.4 </td>
+<td> 3600 </td>
+</tr>
+
+<tr>
+<td> 60° </td>
+<td> 191.75 </td>
+<td> 11505 </td>
+<td> 3600 </td>
+</tr>
+
+<tr>
+<td> 60° </td>
+<td> 188.35 </td>
+<td> 11301 </td>
+<td> 3600 </td>
+</tr>
+
+
+<tr>
+<td> 60° </td>
+<td> 189.83 </td>
+<td> 11389.8 </td>
+<td> 3600 </td>
+</tr>
+
+<tr>
+<td> 60° </td>
+<td> 190.01</td>
+<td> 11400.6 </td>
+<td> 3600 </td>
+</tr>
+
+<tr>
+<td> 60° </td>
+<td> 188.08 </td>
+<td> 11284.8 </td>
+<td> 3600 </td>
+</tr>
+
+<tr>
+<td> 60° </td>
+<td> 192.13</td>
+<td> 11527.8 </td>
+<td> 3600 </td>
+</tr>
+
+<tr>
+<td> 60° </td>
+<td> 186.44</td>
+<td> 11186.4 </td>
+<td> 3600 </td>
+</tr>
+
+
+<tr>
+<td> 60° </td>
+<td> 188.77</td>
+<td> 11326.2</td>
+<td> 3600 </td>
+</tr>
+
+<tr>
+<td>∑ 600 </td>
+<td>∑ 189507</td>
+<td>∑ 113704.2</td>
+<td>∑ 36000 </td>
+</tr>
+</table>
+</div>
+
+<h3>Step 2: Find the mean of 30°,45°, and 60°</h3>
+<p> We already calculated for the mean of each angle</p>
+<div class="row">
+<img style="width:150px; height:100px; margin:45px" src="images/project2/meanans30.png"><br><br>
+<img style="width:150px; height:100px; margin:45px" src="images/project2/meanans45.png"><br><br>
+<img style="width:150px; height:100px; margin:45px" src="images/project2/meanans60.png"><br><br>
+</div>
+<h3>Step 3:Find the sum of x, y, xy, and x²</h3>
+<table style="width:90%;  border-collapse: collapse; margin:10px">
+<tr>
+<th>x (angles)</th>
+<th> y (mean of trials)</th>
+<th> xy </th>
+<th> x² </th>
+</tr>
+
+<tr>
+<td> 30° </td>
+<td> 200.821 </td>
+<td> 60246.3 </td>
+<td> 900 </td>
+</tr>
+
+<tr> 
+<td> 45° </td>
+<td> 239.472 </td>
+<td> 107762.4 </td>
+<td> 2025 </td>
+</tr>
+
+<tr>
+<td> 60° </td>
+<td> 189.507 </td>
+<td> 113704.2 </td> 
+<td> 3600 </td>
+</tr>
+
+<tr><b>
+<td>∑ 1350 </td>
+<td>∑ 629.8 </td>
+<td>∑ 281712.90 </td>
+<td>∑ 65250 </td>
+</tr></b>
+</table>
+
+<h3> Step 4: Solve for the Linear Regression </h3>
+<p> Now that we have all the component, we can now <b> substitiute the values. </b></p>
+<img style="width:100%; height: 40%" src="images/project2/linearform.png"> 
+<img style="width:30%; height: 20%" src="images/project2/mandblin.png"<br>
+<p><b> a) But first, we will find <i>m</i> or the slope</p>
+<img style="width:40%; height: 40%; margin:20px" src="images/project2/msub.png">
+<img style="width:40%; height: 40%; margin: 20px" src="images/project2/mans.png">
+<img style="width:40%; height: 40%; margin:20px" src="images/project2/mapx.png">
+<p> a) Now, we can find <i>b</i> or the y-intercept</p>
+<img style="width:50%; height: 40%; margin:20px" src="images/project2/bsub.png">
+<img style="width:40%; height: 20%; margin:10px" src="images/project2/bans.png">
+<img style="width:30%; height: 30%; margin:20px" src="images/project2/bapx.png">
+<p> c) We now have our equation:</p></b>
+<img style="width:90%; height: 50%; margin:20px" src="images/project2/linform.png">
+
+<h3> Step 5: Predictions</h3>
+<p> Through this equation, we can now predict the expected distance of any angle. For example,
+if we have a 50° swing what would be it's expected distance? </p>
+<p> a) We would just substitute 50° with <i> x </i></p>
+<img style="width:50%; height: 40%; margin:20px" src="images/project2/lin50sub.png">
+<p> b) Calculate then we will have the expected distance, which is:</p>
+<img style="width:50%; height: 30%; margin:20px" src="images/project2/lin50ans.png">
+<br><br>
 </div>
 
 <div id="Conclusion" class="tabcontent">
-  <h3>Conclusion</h3>
-  <p>THE ANSWER/S</p> 
+<h2 style="font-family:Montserrat" >I. Results</h2>
+  <div id="copyright" style="height:3px;width:100%;background-color:black"> <br></div>
+	<h3><b>Player 1</b> swinging confidently at a 30° angle. His ball rockets 
+	forward in a low, fast arc, skimming just above the fairway and rolling far once it lands.</h3>
+	<center><img style="width:95%; height: 80%; margin:20px" src="images/project2/30ball.gif"> </center>
+		<div id="copyright" style="height:2px;width:100%;background-color:black"> <br></div>
+	
+	<h3><b>Player 2</b> hits the farthest with a smooth swing at a 45° angle,
+	his ball soars in a <b>perfectly balanced curve</b>, reaching both <b>height and distance.</b></h3>
+	<center><img style="width:95%; height: 80%; margin:20px" src="images/project2/45ball.gif"></center>
+		<div id="copyright" style="height:2px;width:100%;background-color:black"> <br></div>
+	
+	<h3><b>Player 3</b> takes swing at a steep 60° angle. The ball climbs high into the blue sky, before 
+	dropping softly back onto the grass. While it doesn’t travel as far, it lands gently, avoiding hazards.</h3>
+	<center><img style="width:95%; height: 80%; margin:20px" src="images/project2/60ball.gif"></center>
+<br><br><br>
+<h2 style="font-family:Montserrat" >II. Optimal Angle</h2>
+  <div id="copyright" style="height:3px;width:100%;background-color:black"> <br></div>
+  <h3>The optimal angle for maximum distance in projectile motion is <b>45°</b>, because it provides the perfect 
+  balance between height and horizontal range. At <b>30°</b>, the shot is lower and faster but shorter; at <b>60°</b>, 
+  the ball flies higher but lands sooner.</h3>
+<br><br><br>
+<h2 style="font-family:Montserrat" >III. Projectile Motion</h2>
+  <div id="copyright" style="height:3px;width:100%;background-color:black"> <br></div>
+<img style="width:40%; height: 30%; margin:20px; float:right" src="images/project2/projectile.png">  
+  <h3>Projectile motion affects how far a golf ball travels after being hit, and the launch angle plays 
+  a big role. A 45° angle usually gives the best balance of height and distance, while 30° makes the shot
+  lower and longer, and 60° sends the ball higher but shorter. In real golf, the best angle is often between 10° 
+  and 20° because of air resistance, backspin, and club design. By studying practice swings and ball 
+  flight, golfers can figure out the most effective angle to achieve maximum distance on the course.</h3>
+<br><br><br>
+
+<h2 style="font-family:Montserrat" >IV. Conclusion</h2>
+  <div id="copyright" style="height:3px;width:100%;background-color:black"> <br></div>
+<h3>While the optimal driver angle is 10-12 degrees, our case study proves that for the higher angles 
+we tested, a lower trajectory is better for distance. The 30° angle was the most effective for carry, 
+while the 45° and 60° angles were progressively less so. This confirms that for distance, a lower 
+flight path is more efficient.</h3> <br><Br>
 </div>
 
 <div id="Application" class="tabcontent">
-  <h3>Application</h3>
-  <p>HOW TO APPLY IN REAL LIFE</p>
+  <h2 style="font-family:Montserrat" >Documentation</h2>
+  <div class="row">
+  <img style="width:29%; height:25%; margin:20px" src="images/project2/docu1.jpg">
+   <img style="width:29%; height:25%; margin:20px" src="images/project2/docu2.jpg">
+  <img style="width:29%; height:25%; margin:20px" src="images/project2/docu3.jpg">
+</div>
+  <div id="copyright" style="height:3px;width:100%;background-color:black"> <br></div>
+
+<h1 style="font-family:Montserrat; font-size:50px; color: green; text-shadow: 2px 2px 4px #000000;"> NICE SHOT! <h1>
+<h2 >Brought to you by Group 10- Fish crackers<h2>
+<h3 style="font-family: eb Garamond"> Skipper: Osma, Zenie <br>
+Scribe: Laburada Yohanna <br>
+Cracker: Navarro, Mary Angeli<br>
+Diggers: Gargar, Nicole <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jayma, Remus<br><br></h3>
 </div>
 
 <script>

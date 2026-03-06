@@ -2,8 +2,10 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<style>
+		 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
 		* {box-sizing: border-box}
 	body {font-family: "times new roman", condensed;}
 
@@ -12,7 +14,7 @@
   float: left;
   background-color: black;
   width: 20%;
-  height: 580px;
+  height: 100%;
 }
 
 
@@ -45,12 +47,13 @@
 .tabcontent {
   float: left;
   padding: 0px 12px;
-  width: 70%;
+  width: 80%;
   border-left: none;
   height: 650px;
+  overflow-y: scroll;
 }
 
-a:link, a:visited {
+.menu:link, a:visited {
   background-color: black;
   color: white;
   padding: 15px 25px;
@@ -60,57 +63,409 @@ a:link, a:visited {
   float: right;
 }
 
-a:hover, a:active {
+.menu:hover, a:active {
   background-color: #9dc08b;
 }
+
+
+h3 	  {
+  margin-left:20px;
+}
+p	  {
+  margin-left:20px
+}
+
+table, td, th{
+  border: 2px solid black;
+  padding-left: 5px;
+ 
+}
+
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+div.gallery {
+  border: 1px solid white;
+}
+
+div.gallery:hover {
+  border: 1px solid green;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  width:  100px;
+  height: 100px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.image:link, a:visited {
+  text-align: center;
+  text-decoration: none;
+}
+
+.image:hover, .image:active {
+  background-color: white;
+}
+
+ position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+.proj:link, a.proj:visited {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: right;
+}
+
+.proj:hover, a.proj:active {
+  background-color: #9dc08b;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
 </style>
 
-		</style>
-	<title>Project 4</title>
-	<a href= "projects.html"><i class="fa fa-home"></i> Projects</a>
-</head>
+<title>Project 4</title>
+ <a class="menu" href= "projects.html"><i class="fa fa-home"></i> Projects</a>
+ </head>
 	<body bgcolor="#fffff">	
-		<h1 style="font-family:times; font-size:300%; color:black;" align= "center">
-		<span class="title-word title-word-1">Project 4
-		</h1>
-		<div id="copyright" style="height:10px;width:100%;background-color:black"> 
+		<h1 style="font-family:Montserrat; font-size:450%; color:black; margin-left:95px" align= "center">
+		<span class="title-word title-word-1">D I G I T A L &nbsp; P O R T F O L I O &nbsp;  4
+	</h1>
+	<div id="copyright" style="height:10px;width:100%;background-color:black"> 
 		</div>
-		
 		<body>
 
-
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Problem')" id="defaultOpen">Problem</button>
-  <button class="tablinks" onclick="openCity(event, 'Explanation')">Explanation</button>
-  <button class="tablinks" onclick="openCity(event, 'Solution')">Solution</button>
-  <button class="tablinks" onclick="openCity(event, 'Conclusion')">Conclusion</button>
-  <button class="tablinks" onclick="openCity(event, 'Application')">Application</button>
+  <button class="tablinks" onclick="openCity(event, 'Problem')" id="defaultOpen">Objectives, Introduction, & Definition of Terms</button>
+  <button class="tablinks" onclick="openCity(event, 'Explanation')">Materials & Procedures</button>
+  <button class="tablinks" onclick="openCity(event, 'Solution')">Data Results & Guide Questions Part 1</button>
+  <button class="tablinks" onclick="openCity(event, 'Conclusion')">Guide Questions Part 2 & Conclusion</button>
+  <button class="tablinks" onclick="openCity(event, 'Application')">Documentation</button>
 </div>
 
 <div id="Problem" class="tabcontent">
-  <h3>Problem</h3>
-  <p>GIVEN PROBLEM</p>
+  <h2 style="font-family:Montserrat; font-size:200%; ">Activity No. 11: Freely Falling Body (laboratory)</h2>
+	<div id="copyright" style="height:2px;width:100%;background-color:black"> <br>
 </div>
+<h2 style="font-family:Montserrat" >I. OBJECTIVES:</h2>
+	<p> At the end if the experiment, the students will be able to:<br> 
+	&nbsp; 1. describe the motion of a freely falling body as function of time.
+	<br>
+	&nbsp; 2. solve the experimental value of the acceleration of freely-falling body.	
+	<br>
+	&nbsp; 3. solve vector problem in any of the following methods given.	
+	</br>
+	</p>
+<h2 style="font-family:Montserrat" >II. INTRODUCTION:</h2>
+	<p>Free Fall is an object that moves due to the action of no other force rather than the force of 
+	gravity. Free fall usually starts from at rest and it travels due to the pull of gravity. In this 
+	case, the object’s initial velocity is equal to zero and it changes to its maximum shortly before 
+	it strikes the ground. Because of this phenomenon, a freely falling body is changing its velocity 
+	constantly per unit of time. This is what is called uniformly accelerated motion.
+		<br><br>
+	For a unifom accelerated motion, the relation between distance (d) travel by the free fall, 
+	it’s velocity (vi) and the time 9t) is expressed by:<br></p>
+	<h1><center>d = vi t + ½ at</h1></center>
 
+<h2 style="font-family:Montserrat" >III. DEFINITION OF TERMS:</h2>
+	<p>1. Free Fall- the motion of an object where gravity is the only force acting upon it </p><br>
+	<p>2. Velocity - Variance is the expected value of the squared variation of a random variable from its 
+	mean value, in probability and statistics.<br></p>
+	<p>3. Acceleration - A statistical measure of variability that indicates the average amount that a set of 
+	numbers deviates from their mean.<br>
+	<p>4. Acceleration - A statistical measure of variability that indicates the average amount that a set of 
+	numbers deviates from their mean.</p><br>
+</div>
+	
 <div id="Explanation" class="tabcontent">
-  <h3>Explanation</h3>
-  <p>ANALYZE THE PROBLEM</p> 
+   
+<h2 style="font-family:Montserrat" >IV. Materials</h2>
+<h3> Meter stick, Metal ball, Stopwatch, and Chalk </h3>
+<h2 style="font-family:Montserrat" >V. Procedures</h2>
+<h3>1. Using meter stick and a chalk, measure distances from the ground to a certain level above.<br>
+2. Let a student from the group drop the ball from a certain height with his one hand while the 
+other hand is holding the stopwatch to simultaneously turn on the timer as he drops the ball.<br></h3>
+
+<p style="font-size: 30px"> For 1.0 meter:</p>
+<center><video controls width="450" height="500" autoplay muted>
+  <source src="images/project4/1meter.mp4" type="video/mp4"/>
+</video><br><br>
+<img style="width:350px; height:350px;" src="images/project4/1sttrial1.0.jpg">&nbsp; &nbsp;
+<img style="width:350px; height:350px;" src="images/project4/2ndtrial1.0.jpg">&nbsp; &nbsp;
+<img style="width:350px; height:350px;" src="images/project4/3rdtrial1.0.jpg">
+<br><br><br></center>
+
+<p style="font-size: 30px"> For 1.5 meter:</p>
+<center><video controls width="450" height="500" autoplay muted>
+  <source src="images/project4/1.5meter.mp4" type="video/mp4">
+</video><br><br>
+<img style="width:350px; height:350px;" src="images/project4/1sttrial1.5.jpg">&nbsp; &nbsp;
+<img style="width:350px; height:350px;" src="images/project4/2ndtrial1.5.jpg">&nbsp; &nbsp;
+<img style="width:350px; height:350px;" src="images/project4/3rdtrial1.5.jpg">
+<br><br><br></center>
+
+<p style="font-size: 30px"> For 2.0 meter:</p>
+<center><video controls width="450" height="500" autoplay muted>
+  <source src="images/project4/2meter.mp4" type="video/mp4">
+</video><br><br>
+<img style="width:350px; height:350px;" src="images/project4/1sttrial2.0.jpg">&nbsp; &nbsp;
+<img style="width:350px; height:350px;" src="images/project4/2ndtrial2.0.jpg">&nbsp; &nbsp;
+<img style="width:350px; height:350px;" src="images/project4/3rdtrial2.0.jpg">
+<br><br><br></center>
+
+<p style="font-size: 30px"> For 2.5 meter:</p>
+<center><video controls width="450" height="500" autoplay muted>
+  <source src="images/project4/2.5meter.mp4" type="video/mp4">
+</video><br><br>
+<img style="width:350px; height:350px;" src="images/project4/1sttrial2.5.jpg">&nbsp; &nbsp;
+<img style="width:350px; height:350px;" src="images/project4/2ndtrial2.5.jpg">&nbsp; &nbsp;
+<img style="width:350px; height:350px;" src="images/project4/3rdtrial2.5.jpg">
+<br><br><br></center>
+
+<h3>3. Let the other two members do the same thing to get a second and third trial.<br>
+4. Apply elimination process to the data which is too far from the rest and get the average of 
+the remaining data for the time taken.<br><br><br>
+<table style="width:100%;  border-collapse: collapse;">
+<tr>
+<th>Height (m)</th>
+<th>1.0 meter</th>
+<th>1.5 meters</th>
+<th>2.0 meters</th>
+<th>2.5 meters</th>
+</tr>
+
+<tr>
+<td> Trial 1</td>
+<td> 0.47 s</td>
+<td> 0.52 s</td>
+<td> 0.67 s</td>
+<td> 0.70 s</td>
+</tr>
+
+<tr>
+<td> Trial 2</td>
+<td> 0.48 s</td>
+<td> 0.55 s</td>
+<td> 0.63 s</td>
+<td> 0.73 s</td>
+</tr>
+
+<tr>
+<td> Trial 3</td>
+<td> 0.45 s</td>
+<td> 0.60 s</td>
+<td> 0.60 s</td>
+<td> 0.70 s</td>
+</tr>
+
+<tr>
+<td> Average Time</td>
+<td><b> 0.47 s</td>
+<td><b> 0.56 s</td>
+<td><b> 0.63 s</td>
+<td><b> 0.71 s</td>
+</tr>
+</table> <br><br>
+<center>
+<img style="width:300px; height:100px;" src="images/project4/1sol.png">&nbsp; &nbsp;
+<img style="width:300px; height:100px;" src="images/project4/1ans.png">&nbsp; &nbsp;<br><br>
+<img style="width:300px; height:100px;" src="images/project4/1.5sol.png">&nbsp; &nbsp;
+<img style="width:300px; height:100px;" src="images/project4/1.5ans.png">&nbsp; &nbsp;<br><br>
+<img style="width:300px; height:100px;" src="images/project4/2sol.png">&nbsp; &nbsp;
+<img style="width:300px; height:100px;" src="images/project4/2ans.png">&nbsp; &nbsp;<br><br>
+<img style="width:300px; height:100px;" src="images/project4/2.5sol.png">&nbsp; &nbsp;
+<img style="width:200px; height:100px;" src="images/project4/2.5ans.png"><br><br></center>
+
+
 </div>
 
 <div id="Solution" class="tabcontent">
-  <h3>Solution</h3>
-  <p>SHOW SOLUTION</p>
+<h2 style="font-family:Montserrat" >VI. Data/Results</h2>  
+   <table style="width:100%;  border-collapse: collapse;">
+<caption style= " font-family: Montserrat; "><b>PARAMETERS</b></caption>
+<tr>
+<th>Height (m)</th>
+<th>Ave. time (s)</th>
+<th>Vf (m/s)</th>
+<th>Experimental g (m/s^2)</th>
+<th>Standard g (m/s^2)</th>
+<th>Percent Error (%E)</th>
+</tr>
+
+<tr>
+<td> 1.0</td>
+<td> 0.47</td>
+<td> 4.3</td>
+<td> 9.2</td>
+<td> 9.8</td>
+<td> 6.1</td>
+</tr>
+
+<tr>
+<td> 1.5</td>
+<td> 0.56</td>
+<td> 5.4</td>
+<td> 9.6</td>
+<td> 9.8</td>
+<td> 2.0</td>
+</tr>
+
+<tr>
+<td> 2.0</td>
+<td> 0.63</td>
+<td> 6.3</td>
+<td> 10</td>
+<td> 9.8</td>
+<td> 2.0</td>
+</tr>
+
+<tr>
+<td> 2.5</td>
+<td> 0.71</td>
+<td> 7.0</td>
+<td> 9.9</td>
+<td> 9.8</td>
+<td> 1.0</td>
+</tr>
+</table> <br><br>
+
+<h3>When a stone falls freely, it accelerates due to gravity, gaining speed as it descends. 
+The data shows that as the height increases, the time and final velocity also increase, confirming 
+uniform acceleration.<br><br>
+The experimental values for gravitational acceleration closely match the standard 9.8 m/s², 
+especially at higher drops. Small percent errors suggest that the method was fairly accurate despite 
+human timing limitations. This experiment proves that gravity acts consistently, and even simple 
+observations can reveal precise physical laws.</h3>
+
+<h2 style="font-family:Montserrat" >VII. Guide Questions Part 1</h2>
+<h3>1. Construct a height time (d-t) graph using data found in columns 1&2. Plot all the coordinates 
+using graphing paper with the average time in the abscissa and the height as the ordinate. Connect 
+the points with a line to have a line graph. If the points do not form a perfectly straight line, 
+draw a line that closely approximates the overall trend of the data. 
+<br>
+<center><img style="width:500px; height:600px;" src="images/project4/p4dt.jpg">&nbsp; &nbsp;</center>
+<br><br>
+2. Calculate the slope of the graph. What unit is obtained in your calculation?<br><br>
+<center><img style="width:400px; height:200px;" src="images/project4/p42q.png">&nbsp; &nbsp;</center>
+<br><br>
+
+3. What physical quantity is reoresented by your answer in #2?<br><br>
+<center><img style="width:400px; height:200px;" src="images/project4/p43q.png">&nbsp; &nbsp;</center>
+<br><br>
+
+
+4. Construct a veocity time (v - t) graph using the data found in columns 3&2. Plot all the 
+coordinates using graphing paper with the average time in the abscissa and the velocity final as the 
+ordinate. Connect the points with a line to have a line graph. IF the points do not form a perfectly 
+straight line, draw a line that closely approximates the overall trend of the data<br></h3>
+<center><img style="width:500px; height:600px;" src="images/project4/p4vt.jpg">&nbsp; &nbsp;</center>
+<br><br>
+
+
 </div>
 
 <div id="Conclusion" class="tabcontent">
-  <h3>Conclusion</h3>
-  <p>THE ANSWER/S</p> 
+<h2 style="font-family:Montserrat" >VIII. Guide Questions Part 2</h2>
+
+<h3>5. Calculate the slope of the graph. What unit is obtained in your calculation?<br><br>
+<center><img style="width:400px; height:200px;" src="images/project4/p45q.png">&nbsp; &nbsp;</center>
+<br><br>
+
+6. What physical quantity is represented by your answer in #5?<br><br>
+<center><img style="width:400px; height:200px;" src="images/project4/p46q.png">&nbsp; &nbsp;</center>
+<br><br>
+
+7. Construct acceleration due to gravity-time (g - t) graph using the data found in columns 4 & 2. 
+Plot all the coordinates using graphing paper with the average time in the abscissa and the 
+experimental acceleration due to gravity as the ordinate. Connect the points with a line to have a 
+line graph. Connect the points with a line to have a line graph. If the points do not form a 
+perfectly straight line, draw a line that closely approximates the overall trend of the data. <br><br>
+<center><img style="width:500px; height:600px;" src="images/project4/p4gt.jpg">&nbsp; &nbsp;</center>
+<br><br>
+
+8. Describe the motion of the freely falling body using the (g -t) graph. <br>
+ The motion of the freely falling stone is uniformly accelerated. The graph shows that the 
+stone’s acceleration stays nearly constant because of gravity, meaning its speed keeps increasing as it falls toward the 
+ground.</h3>
+<h2 style="font-family:Montserrat" >IX. Conclusion</h2>
+<h3>Our group's free-falling activity conducted remotely due to the unexpected earthquake, which 
+made it difficult to complete the work on time. Despite the challenges of working online and having limited resources, we were 
+stull able to collaborate effectively and finish the experiment. The experience taught us the importance of teamwork, 
+adaptability, and communication in overcoming obstacles. 
+<br>
+The experience taught us things harder, the activity was still enjoyable and educational. Overall, it was meaningful learning 
+experience that showed how science and cooperation can continue even in difficult circumstances.</h3>
+
+
 </div>
 
-<div id="Application" class="tabcontent">
-  <h3>Application</h3>
-  <p>HOW TO APPLY IN REAL LIFE</p>
-</div>
+
 
 <script>
 function openCity(evt, cityName) {

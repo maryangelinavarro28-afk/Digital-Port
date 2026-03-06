@@ -45,9 +45,10 @@
 .tabcontent {
   float: left;
   padding: 0px 12px;
-  width: 70%;
+  width: 80%;
   border-left: none;
   height: 650px;
+  overflow-y: scroll;
 }
 
 a:link, a:visited {
@@ -63,6 +64,78 @@ a:link, a:visited {
 a:hover, a:active {
   background-color: #9dc08b;
 }
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  object-fit: cover
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+  
+/* Add padding BETWEEN each column (if you want) */
+.row1,
+.row1 > .column1 {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 25%;
+  object-fit: cover
+}
+
+/* Clear floats after rows */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content1 {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column1 {
+    width: 50%;
+  }
+}
+
+
+
 </style>
 
 		</style>
@@ -80,36 +153,258 @@ a:hover, a:active {
 
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Problem')" id="defaultOpen">Problem</button>
-  <button class="tablinks" onclick="openCity(event, 'Explanation')">Explanation</button>
-  <button class="tablinks" onclick="openCity(event, 'Solution')">Solution</button>
-  <button class="tablinks" onclick="openCity(event, 'Conclusion')">Conclusion</button>
-  <button class="tablinks" onclick="openCity(event, 'Application')">Application</button>
+  <button class="tablinks" onclick="openCity(event, 'Introduction')" id="defaultOpen">Introduction, Research, and Background Information</button>
+  <button class="tablinks" onclick="openCity(event, 'Plan')"> Planning and Design</button>
+  <button class="tablinks" onclick="openCity(event, 'Construction')">Device Construction</button>
+  <button class="tablinks" onclick="openCity(event, 'Testing')">Testing and Results</button>
+  <button class="tablinks" onclick="openCity(event, 'Final')">Final Output</button>
 </div>
 
-<div id="Problem" class="tabcontent">
-  <h3>Problem</h3>
-  <p>GIVEN PROBLEM</p>
+<div id="Introduction" class="tabcontent">
+  <h2>I. What is an egg drop experiment?</h2>
+  <p>The Egg Drop Experiment is a hands-on physics experiment that allows students to experiment 
+  with the concepts of force, motion, gravity, and energy. The goal of the Egg Drop Experiment is to create a 
+  device that protects a raw egg from breaking when it is dropped from a predetermined height.
+  <br><br> 
+  When a falling object reaches the ground, gravity acts upon it and causes it to accelerate 
+  and gain speed. The kinetic energy that results from falling must be absorbed or otherwise 
+  prevented from damaging the egg upon impact. By developing a device for increasing time of 
+  impact and distributing the force of impact over an area, the force acting on the egg at 
+  impact can be reduced.
+  <br><br> 
+  This experiment illustrates how concepts of Newton's Three Laws of Motion, momentum, and 
+  impulse apply to physical examples as related to the real world. The project requires 
+  students to use their critical thinking, creativity, and problem solving skills to 
+  develop their project plans through engineering design. 
+  </p><br><br><br>
+  <h2>II. Roles and Responsibilities</h2>
+	<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="images/skipper.jpg" alt="Skipper" style="width:100%">
+      <h3>Skipper</h3>
+      <p>The leader of the group who coordinates tasks, guides decision-making, and ensures 
+	  the team stays on track.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="images/scribe.jpg" alt="Scribe" style="width:100%">
+      <h3>Scribe</h3>
+      <p>The documenter of the group who records procedures, observations, and results 
+	  clearly and accurately</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="images/digger.jpg" alt="Diggers" style="width:100%">
+      <h3>Diggers</h3>
+      <p>The main researcher of the group who gathers relevant information and physics 
+	  concepts to support the design.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="images/cracker.jpg" alt="Cracker" style="width:100%">
+      <h3>Cracker</h3>
+      <p>The main problem solver of the group who analyzes challenges and develops effective 
+	  solutions during the project.</p>
+    </div>
+  </div>
 </div>
 
-<div id="Explanation" class="tabcontent">
-  <h3>Explanation</h3>
-  <p>ANALYZE THE PROBLEM</p> 
+	<h2>III. Physics Concepts </h2>
+	<h3> 1. Impulse–Momentum Theorem </h3>
+	<p>- Longer stopping time → smaller force on the egg.<br>
+	<h3> 2. Force Distribution </h3>
+	<p>- Force spreading reduces stress on any single point.<br>
+	<h3> 3. Energy Transformation </h3>
+	<p>- Energy is absorbed by the structure, not the egg.<br>
+	<h3> 4. Newton’s Second Law </h3>
+	<p>- Lower acceleration = lower force<br>
+	<h3> 5. Structural Geometry </h3>
+	<p>- Triangular structures are mechanically stable<br>
+	<h3> 6. Center of Mass and Stability </h3>
+	<p>- Stable objects fall predictably and absorb force evenly.<br><br>
+	
+	<h2>IV. Material Properties</h2>
+	<h3>Why Toothpicks and Glue Are Commonly Used in Egg Drop Experiments?</h3>
+		<p>Toothpicks and glue are commonly used in egg drop experiments because they are 
+		<b>lightweight, inexpensive, and structurally effective materials</b> that allow students 
+		to build strong but low-mass frameworks. Toothpicks provide <b> a good 
+		strength-to-weight ratio</b>, making them capable of supporting the egg without adding 
+		excessive weight that would increase impact force during a fall. When combined with 
+		glue, they can form stable geometric structures such as trusses, cages, and pyramids 
+		that distribute force evenly across the structure instead of concentrating it on a 
+		single point. This makes them ideal for demonstrating basic engineering principles 
+		such as <b>load distribution, compression, tension, and structural stability.</b></p>
+	<h3>Importance of Cushioning and Shock-Absorbing Designs in Protecting Fragile Objects</h3>
+		<p>Cushioning and shock-absorbing designs help protect fragile objects by <b>reducing the 
+		amount of force transferred during impact.</b> When an object falls, damage occurs when it 
+		stops suddenly and the force of collision is transferred directly to it. Cushioning 
+		materials and flexible structures <b>increase the stopping time of the object, which lowers 
+		the impact force and prevents sudden deceleration.</b> These designs absorb and disperse 
+		kinetic energy through <b>compression, bending, and deformation</b>, allowing the energy to be 
+		spread across a wider area instead of being focused on the fragile object. As a result, 
+		the object is protected from cracking or breaking because the <b>force is reduced, 
+		redirected, and absorbed</b> before it reaches the most vulnerable parts.</p>
 </div>
 
-<div id="Solution" class="tabcontent">
-  <h3>Solution</h3>
-  <p>SHOW SOLUTION</p>
+<div id="Plan" class="tabcontent">
+  <h2>V. Design Ideas</h2>
+	<p>The design idea focuses on creating a <b>lightweight protective cage made of toothpicks arranged 
+	in triangular and pyramid shapes for maximum strength.</b> The egg is placed at the center and 
+	<b>suspended or cushioned by the structure so it does not directly touch the ground upon impact.</b> 
+	This design allows the force of the fall to <b>spread across the frame, reducing the impact force 
+	on the egg and increasing its chance of survival.</b></p> 
+		<img style="width:40%; height: 70%" src="images/p5di1.png" style="width:45%"> &nbsp;&nbsp;&nbsp;
+		<img style="width:40%; height: 40%" src="images/p5di2.png" style="width:45%"><br><br><br>
+  <h2>VI. Design Sketches</h2>
+	<p>The design sketches illustrate the proposed egg drop structure and how materials are 
+	arranged to protect the egg. They show how forces from impact are distributed and absorbed to 
+	reduce damage. These sketches guide construction and help identify possible improvements 
+	before testing.</p>
+	<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="images/p5ds1.jpg" alt="Skipper" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="images/p5ds2.jpg" alt="Scribe" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="images/p5ds3.jpg" alt="Diggers" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="images/p5ds4.jpg" alt="Cracker" style="width:100%">
+			</div>
+		</div>
+	</div>
+   <h2>VII. Step-by-step Construction </h2>
+   <p>1. Build a central egg holder by forming a small cage with toothpicks and glue, securing the egg firmly in the center.
+<Br>
+	  2. Attach long toothpick arms radiating outward from the center, evenly spaced, to act as shock absorbers.
+<br>
+	  3. Reinforce joints with glue blobs at intersections to increase strength and flexibility.
+<br>
+      4. Add angled support legs below the egg so the structure lands on the arms first, not the egg.
+<br>
+      5. Let all glue dry completely before testing to ensure structural stability.<p>
+<h2> Challenges and Adjustments</h2>
+	<p>The physics egg drop experiment assesses several fundamental concepts, <b>including force, impact and 
+	energy absorption.</b> The use of toothpicks and hot glue create difficulties due to the brittle 
+	nature of the toothpicks and eggshell, leading to a need for even distribution of force while 
+	reducing direct impact. A carefully thought-out design will help ensure the egg does not break 
+	upon impact with the ground.</p>
+	<p>Controlling both the way that glue attaches objects together and how the overall structure 
+	responds to impacts can also be challenging. Using <b>too much glue will add weight to the 
+	overall structure</b> while using <b>too little will make the frame weak</b>, but making some structural 
+	modifications, such as making use of triangular shapes, will aid in stability and shock 
+	absorption. Finding the <b>right balance between rigidity and flexibility</b> is important for 
+	developing a strong, well-designed structure that is able to absorb the energy of an impact 
+	while remaining intact; thus, providing something that exemplifies the application of the 
+	laws of physics in solving a problem.</p>
+
+</div>
+<div id="Construction" class="tabcontent">
+  <h2>VII. Step-by-step Construction </h2>
+   <p>1. Build a central egg holder by forming a small cage with toothpicks and glue, securing the egg firmly in the center.
+<Br>
+	  2. Attach long toothpick arms radiating outward from the center, evenly spaced, to act as shock absorbers.
+<br>
+	  3. Reinforce joints with glue blobs at intersections to increase strength and flexibility.
+<br>
+      4. Add angled support legs below the egg so the structure lands on the arms first, not the egg.
+<br>
+      5. Let all glue dry completely before testing to ensure structural stability.<p>
+<h2> Challenges and Adjustments</h2>
+	<p>The physics egg drop experiment assesses several fundamental concepts, <b>including force, impact and 
+	energy absorption.</b> The use of toothpicks and hot glue create difficulties due to the brittle 
+	nature of the toothpicks and eggshell, leading to a need for even distribution of force while 
+	reducing direct impact. A carefully thought-out design will help ensure the egg does not break 
+	upon impact with the ground.</p><br>
+	<p>Controlling both the way that glue attaches objects together and how the overall structure 
+	responds to impacts can also be challenging. Using <b>too much glue will add weight to the 
+	overall structure</b> while using <b>too little will make the frame weak</b>, but making some structural 
+	modifications, such as making use of triangular shapes, will aid in stability and shock 
+	absorption. Finding the <b>right balance between rigidity and flexibility</b> is important for 
+	developing a strong, well-designed structure that is able to absorb the energy of an impact 
+	while remaining intact; thus, providing something that exemplifies the application of the 
+	laws of physics in solving a problem.</p>
+
 </div>
 
-<div id="Conclusion" class="tabcontent">
-  <h3>Conclusion</h3>
-  <p>THE ANSWER/S</p> 
+<div id="Testing" class="tabcontent">
+  <h2>VIII. Testing Set-up</h2>
+  <p>In evaluating the stability and safety of the egg drop design at 3rd floor RTL building, the 
+  frame of the structure demonstrated structural stability while remaining intact and absorbing 
+  the impact of falling. The frame did remain intact and absorbed the impact of the fall. 
+  However, the egg broke due to the egg not being secured tightly within the frame regardless of 
+  the strength of the overall structure.</p><br>
+  <p>The findings of the pre-test indicated that the placement of the egg internally with regard 
+  to the structural strength on the outside of the structure was equally as important. The 
+  loosely placed egg moved and bounced within the structure when the impact of the fall occurred, 
+  causing the egg to hit the supports of the structure and be cracking. Therefore, improvements 
+  were recommended to provide some type of internal support or cushioning to keep the egg secured 
+  in its current position.</p>
+		<center><video width="320" height="540" controls>
+		<source src="images/p5test.mp4" type="video/mp4"></center>
+		</video>
+   <h2>IX. Final Results</h2>
+   <p>The final phase was very risky because we only had one design and no chance for trial 
+   runs. Many people doubted that the structure would survive the drop, which added pressure 
+   during the experiment. Despite this, the egg remained intact, proving that the design 
+   effectively absorbed and distributed the impact force. The successful result increased our 
+   confidence in the design and demonstrated the importance of applying physics principles rather 
+   than relying on assumptions alone.</p>
+		<center><video width="320" height="540" controls>
+		<source src="images/p5finalt.mp4" type="video/mp4"></center>
+		</video>
 </div>
 
-<div id="Application" class="tabcontent">
-  <h3>Application</h3>
-  <p>HOW TO APPLY IN REAL LIFE</p>
+<div id="Final" class="tabcontent">
+  <h2> X. Reflection on Design</h2>
+  <p>This design centers the egg within a triangular frame, allowing impact forces to be 
+  distributed through the extended straws rather than directly onto the egg. The protruding 
+  supports act as shock absorbers by increasing the time of impact and reducing the force 
+  transferred to the egg. Overall, the structure reflects an understanding of force distribution 
+  and energy absorption, though improving symmetry and joint strength could further enhance its 
+  effectiveness during a drop.</p>
+  <center><img src="images/p5rd.jpg" style="width:50%"></center><br><br><br>
+  This final design representation showcases a collaborative hands-on activity that demonstrates 
+  teamwork, coordination, and applied problem-solving. The image highlights how participants 
+  worked together to maintain balance and stability using controlled tension and shared 
+  responsibility, reflecting concepts such as force distribution and structural equilibrium. 
+  Rather than relying on lengthy explanations, the visual effectively communicates both the 
+  design process and the practical application of theoretical principles.</p>
+  <div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="images/p5fdr1.jpg" alt="Skipper" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="images/p5fdr2.jpg" alt="Scribe" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="images/p5fdr3.jpg" alt="Diggers" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="images/p5fdr4.jpg" alt="Cracker" style="width:100%">
+			</div>
+		</div>
+	</div>
 </div>
 
 <script>
